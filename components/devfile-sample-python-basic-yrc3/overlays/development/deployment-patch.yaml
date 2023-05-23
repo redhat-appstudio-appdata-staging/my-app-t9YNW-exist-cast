@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-yrc3
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/rhartman-tenant/my-app/devfile-sample-python-basic-yrc3@sha256:b819196c1523f5126d21fabcfb4e5246297314561075f6203b5bbb661814697e
+        name: my-python
+        resources: {}
+status: {}
